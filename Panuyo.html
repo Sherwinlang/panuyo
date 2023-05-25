@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Webpage</title>
+	<link rel="stylesheet" type="text/css" href="Design.css">
+</head>
+<body>
+	<header>
+		<a href="#" class="logo">Logo</a>
+		<ul>
+			<li><a href="#" class="active">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Work</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+	</header>
+	<section>
+		<img src="stars.png" id="stars">
+		<img src="moon.png" id="moon">
+		<img src="mountains_behind.png" id="mountains_behind">
+		<h2 id="text">I Love You</h2>
+		<a href="#sec" id="bnt">Explore</a>
+		<img src="mountains_front.png" id="mountains_front">
+	</section>
+	<div class="sec" id="sec">
+		<h2>Sorry Love</h2>
+		<p>Hi mel i just want to say na thankyou kasi andyan ka palagi, you always makin' me feel that im worth loving :)<br><br>don't worry i'll love you with all my care and heart, hindi ka makakaranas ng trauma sakin sis tandaan mo yan kung papaano kita itrato ngayon, ganon at ganon na yon hindi na yon mag babago sis kasi ikaw na yan e si melody ann castillo na yan e.<br><Br>I love you, not only for what you are, but for what I am when I am with you<br><br><strong>I love you mel</strong></p>
+	</div>
+
+	<script>
+		let stars = document.getElementById('stars')
+		let moon = document.getElementById('moon')
+		let mountains_behind = document.getElementById('mountains_behind')
+		let text = document.getElementById('text')
+		let bnt = document.getElementById('bnt')
+		let mountains_front.png = document.getElementById('mountains_front.png')
+
+		window.addEventListener('scroll', function(){
+			let value = window.scrollY;
+			stars.style.left = value * 0.25 + 'px';
+			moon.style.top = value * 1.05 + 'px';
+		})
+	</script>
+</body>
+</html>
